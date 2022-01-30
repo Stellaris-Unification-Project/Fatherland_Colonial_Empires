@@ -477,13 +477,9 @@ country_event = {
 				modifier = {
 					factor = 0
 						OR = { 
-							has_ethic = ethic_spiritualist
-							has_ethic = ethic_fanatic_spiritualist
+							is_spiritualist = yes
 						}
-						NOR = {
-							has_ethic = ethic_pacifist
-							has_ethic = ethic_fanatic_pacifist
-						}
+						is_pacifist = no
 				}			
 				modifier = {
 					factor = 1.5
@@ -1536,8 +1532,7 @@ country_event = {
 				this.planet = { 
 					NOR = { 
 						has_modifier = rogue_colonial_world 
-						is_planet_class = pc_habitat
-						is_planet_class = pc_ringworld_habitable
+						is_artificial = yes
 						habitable_planet = no
 					} 		
 				}  
@@ -2372,8 +2367,7 @@ country_event = {
 						has_modifier = rogue_colonial_world 
 						has_modifier = hegira_colonial_world
 						has_modifier = frontier_colonial_world #Not an error, needs FW Addon
-						is_planet_class = pc_habitat
-						is_planet_class = pc_ringworld_habitable
+						is_artificial = yes
 					} 		
 				}  
 			}
